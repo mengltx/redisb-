@@ -27,7 +27,7 @@ redis字典中使用的哈希表由dict.h/dictht结构定义
 
 table属性是一个数组数组中每个元素都是指向dict.h/dictEntry结构的指针,每个dictEntry结构保存这一个键值对,size记录了哈希表的大小,即table数组的大小.used属性记录着哈希表已有节点(键值对)的数量.sizemask属性的值总是等于size-1,这个属性和哈希值一起决定一个键被放到table数组的哪个索引上.
 
-<img src="/Users/zhangdongdong/Library/Application Support/typora-user-images/image-20200524212732096.png" alt="image-20200524212732096" style="zoom:50%;" />
+<img src="img/image-20200524212732096.png" alt="image-20200524212732096" style="zoom:50%;" />
 
 
 
@@ -56,7 +56,7 @@ table属性是一个数组数组中每个元素都是指向dict.h/dictEntry结�
 
 key属性保存着键值对中的键,而v属性保存着键值对中的值,其中值可以是一个指针,或者是一个uint64_t整数,又或者是一个int64_t整数.next属性是指向另一个哈希表节点的指针,这个指针将多个哈希值相同的键值对连接在一起,解决键冲突的问题.
 
-<img src="/Users/zhangdongdong/Library/Application Support/typora-user-images/image-20200524213821230.png" alt="image-20200524213821230" style="zoom:50%;" />
+<img src="img/image-20200524213821230.png" alt="image-20200524213821230" style="zoom:50%;" />
 
 #### 字典
 
@@ -113,7 +113,7 @@ ht属性是一个包含两个项的数组,数组的每一项都是dictht哈希�
 
 下图展示里一个普通状态下的字典
 
-![image-20200524220221215](/Users/zhangdongdong/Library/Application Support/typora-user-images/image-20200524220221215.png)
+![image-20200524220221215](img/image-20200524220221215.png)
 
 
 
