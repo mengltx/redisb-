@@ -114,7 +114,7 @@ ht属性是一个包含两个项的数组,数组的每一项都是dictht哈希�
 下图展示里一个普通状态下的字典
 
 ![image-20200524220221215](/Users/zhangdongdong/Library/Application Support/typora-user-images/image-20200524220221215.png)
-
+![](https://tva1.sinaimg.cn/large/007S8ZIlgy1gf3leb25i2j30s50fvab1.jpg)
 
 
 ### 哈希算法
